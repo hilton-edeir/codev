@@ -287,11 +287,29 @@ section {
   box-shadow: 0px 5px 30px var(--prim-color);
 }
 
+.hero .btn-get-back {
+  margin-top: 50px;
+  line-height: 0;
+  padding: 15px 40px;
+  border-radius: 4px;
+  transition: 0.5s;
+  color: #fff;
+  background: var(--prim-color);
+  box-shadow: 0px 5px 30px var(--prim-color);
+}
+
 .hero .btn-get-started span {
   font-weight: 600;
   font-size: 16px;
   letter-spacing: 1px;
 }
+
+.hero .btn-get-back span {
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
 
 .hero .btn-get-started i {
   margin-left: 5px;
@@ -299,8 +317,18 @@ section {
   transition: 0.3s;
 }
 
+.hero .btn-get-back i {
+  margin-right: 5px;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
 .hero .btn-get-started:hover i {
   transform: translateX(5px);
+}
+
+.hero .btn-get-back:hover i {
+  transform: translateX(-5px);
 }
 
 .hero .hero-img {
