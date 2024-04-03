@@ -1,11 +1,442 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <!-- Favicons -->
+  <link href="assets/img/codev_icon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  <title>Codev</title>
 </head>
+
 <body>
-    <h1>Welcome</h1>
+  <header id="header" class="header fixed-top">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center">
+        <img src="assets/img/codev_icon.png" alt="">
+        <span>Codev</span>
+      </a>
+      <nav id="navbar" class="navbar">
+        <a href="#contact">Talk to me</a>
+      </nav>
+    </div>
+  </header>
+  <!-- Hero -->
+  <section id="hero" class="hero d-flex align-items-center">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 d-flex flex-column justify-content-center">
+          <h2 data-aos="fade-up" data-aos-delay="400">
+            <ul class="fs-4 cod-list-1 pt-5 pb-5" style="list-style-type:none;">
+              <li class><span class="py-orange">def</span> <span class="py-blue">greeting</span>( ):
+                  <ul class="cod-list-2 pt-2" style="list-style-type:none;">
+                      <li>this_website = <span class="py-green">"Codev"</span></li>
+                      <li class="pb-3">my_name = <span class="py-green">"Hilton Tavares"</span></li>
+                      <li><span class="py-purple">print</span>( <span class="py-green">"Hello, welcome to "</span>  + this_website )</li>
+                      <li><span class="py-purple">print</span>( <span class="py-green">"You can call me "</span>  + my_name )</li>
+                      <li><span class="py-purple">print</span>( <span class="py-green">"And here, you can see my dev side"</span> )</li>
+                  </ul>
+              </li>
+              <br>
+              <li class="pt-2">greeting( )</li>
+            </ul>
+          </h2>
+
+          <div data-aos="fade-up" data-aos-delay="600">
+            <div class="text-center text-lg-start">
+              <a href="#main" class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
+                <span>Start</span>
+                  <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 hero-img" data-aos="zoom-out" data-aos-delay="200">
+          <img src="assets/img/hand-coding-animate.svg" alt="">
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <!-- Hero -->
+
+  <main id="main">
+    <!-- ======= Features Section ======= -->
+    <section id="features" class="features">
+
+      <div class="container" data-aos="fade-up">
+
+        <!-- Feature Icons -->
+        <div class="row feature-icons" data-aos="fade-up">
+          
+          <header class="section-header">
+            <p>&lt Skills /&gt</p>
+            <h2>Knowledge background</h2>
+          </header>
+
+          <div class="row">
+
+            <div class="col-xl-4 text-center" data-aos="fade-right" data-aos-delay="100">
+              <lottie-player class="img-fluid lottie-img"  src="assets/img/books.json" background="transparent"  speed="1.2" loop autoplay></lottie-player>
+            </div>
+
+            <div class="col-xl-8 d-flex content">
+              <div class="row align-self-center">
+
+                <div class="col-md-6 icon-box" data-aos="fade-up">
+                  <i class="ri-database-2-fill"></i>
+                  <div>
+                    <h4>Database Modeling</h4>
+                    <p>I can build a database from requirements modeling to it's implementation.
+                      I use mostly SQL Server, MySQL for relational modeling and Firebase for NoSQL</p>
+                  </div>
+                </div>
+
+                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
+                  <i class="ri-braces-line"></i>
+                  <div>
+                    <h4>Backend Developer</h4>
+                    <p>I use Java, C++, Python, C# for backend implementation.
+                       The frameworks I feel comfortable working with are Django and ASP.NET MVC</p>
+                  </div>
+                </div>
+
+                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
+                  <i class="ri-code-line"></i>
+                  <div>
+                    <h4>Android App Developer</h4>
+                    <p>I can build android applications using Java language</p>
+                  </div>
+                </div>
+
+                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
+                  <i class="ri-pencil-ruler-fill"></i>
+                  <div>
+                    <h4>IU Designer</h4>
+                    <p>Using mostly XD, Figma and Vectary for website designs, prototypes and my criativity</p>
+                  </div>
+                </div>
+
+                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
+                  <i class="ri-global-fill"></i>
+                  <div>
+                    <h4>Languages</h4>
+                    <p>Crioulo is my native language, Portuguese is my official language and currently I'm at C2 level (advanced) in English</p>
+                  </div>
+                </div>
+
+                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
+                  <i class="ri-graduation-cap-fill"></i>
+                  <div>
+                    <h4>Education</h4>
+                    <p>I studied Computer Engeneering at University of Cape Verd</p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+
+        </div><!-- End Feature Icons -->
+
+      </div>
+
+    </section><!-- End Features Section -->
+
+    <!-- ======= Clients Section ======= -->
+    <section id="clients" class="clients">
+
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header pb">
+          <p>&lt Tools /&gt</p>
+          <h2>Technologies I use the most</h2>
+        </header>
+
+        <div class="clients-slider swiper">
+          <div class="swiper-wrapper align-items-center">
+            <div class="swiper-slide"><img src="assets/img/clients/cpp.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/csharp.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/java.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/sql.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/python.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/javascript.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/django.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/dot_net.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/sqlserver.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/mysql.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/firebase.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/git.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/html.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/css.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/bootstrap.png" class="img-fluid" alt=""></div>
+            
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+
+    </section><!-- End Clients Section -->
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio">
+
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <p>&lt Projects /&gt</p>
+          <h2>Check my latest projects</h2>
+        </header>
+
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-app">Android</li>
+              <li data-filter=".filter-card">Database</li>
+              <li data-filter=".filter-web">Web</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row gy-4 portfolio-container" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/car.svg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>iMech</h4>
+                <p>An app to book car fix</p>
+                <div class="portfolio-links">
+                  <a href="project-details.html" title="More Details"><i class="ri-links-fill"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/doctors.svg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Hospital Garcia Horta</h4>
+                <p>Automate hospital proccesses</p>
+                <div class="portfolio-links">
+                  <a href="project-details.html" title="More Details"><i class="ri-links-fill"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/music.svg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Music hub</h4>
+                <p>An app to play audio and listen to music</p>
+                <div class="portfolio-links">
+                  <a href="project-details.html" title="More Details"><i class="ri-links-fill"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/construction.svg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Kava Construction</h4>
+                <p>A database design for a construction company </p>
+                <div class="portfolio-links">
+                  <a href="project-details.html" title="More Details"><i class="ri-links-fill"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/high_school.svg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Complexo Educativo Olegário Tavares</h4>
+                <p>A system to manage an high school</p>
+                <div class="portfolio-links">
+                  <a href="project-details.html" title="More Details"><i class="ri-links-fill"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/barber.svg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>MyCare</h4>
+                <p>AN app to book haircut with barbers</p>
+                <div class="portfolio-links">
+                  <a href="project-details.html" title="More Details"><i class="ri-links-fill"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/grocery store.svg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Bimas</h4>
+                <p>Database design for a grocery store</p>
+                <div class="portfolio-links">
+                  <a href="project-details.html" title="More Details"><i class="ri-links-fill"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/bank.svg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Banco Comercial Atlâtico</h4>
+                <p>A database to keep bank records</p>
+                <div class="portfolio-links">
+                  <a href="project-details.html" title="More Details"><i class="ri-links-fill"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/weather.svg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Weather Spy</h4>
+                <p>Check the weather state based on location</p>
+                <div class="portfolio-links">
+                  <a href="project-details.html" title="More Details"><i class="ri-links-fill"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- End Portfolio Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <p>&lt Contact /&gt</p>
+          <h2>Talk to me</h2>
+        </header>
+
+        <div class="row gy-4">
+
+          <div class="col-lg-6">
+
+            <div class="row gy-4">
+              <div class="col-md-6">
+                <div class="info-box">
+                  <i class="ri-mail-fill"></i>
+                  <h3>Email me</h3>
+                  <p>hilton.edeir@gmail.com</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="info-box">
+                  <i class="ri-github-fill"></i>
+                  <h3>Github</h3>
+                  <p><a target="_blank" href="https://github.com/hilton-edeir">github.com/hilton-edeir</a></p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="info-box">
+                  <i class="ri-linkedin-box-fill"></i>
+                  <h3>Linkedin</h3>
+                  <p><a target="_blank" href="https://www.linkedin.com/in/hilton-tavares-8464aa271/">linkedin.com/in/hilton-tavares-8464aa271</a></p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="info-box">
+                  <i class="ri-download-2-fill"></i>
+                  <h3>Curriculum Vitae</h3>
+                  <p><a href="assets/docs/CVitae - Hilton Tavares.pdf" download="CVitae - Hilton Tavares">Download my Curriculum Vitae</a></p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-lg-6">
+            <form action="forms/contact.php" method="post" class="php-email-form">
+              <div class="row gy-4">
+
+                <div class="col-md-6">
+                  <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+                </div>
+
+                <div class="col-md-6 ">
+                  <input type="email" class="form-control" name="email" placeholder="Your Email" required>
+                </div>
+
+                <div class="col-md-12">
+                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required></textarea>
+                </div>
+
+                <div class="col-md-12 text-center">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+
+                  <button type="submit">Send Message</button>
+                </div>
+
+              </div>
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+    <!-- Contact -->
+  </main>
+  <!-- main -->
+
+  
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <script type='text/javascript'>document.addEventListener('DOMContentLoaded', function () {window.setTimeout(document.querySelector('svg').classList.add('animated'),1000);})</script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+  
 </body>
+
 </html>
