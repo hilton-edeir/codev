@@ -202,6 +202,7 @@ section {
   letter-spacing: 1px;
   color: var(--prim-color);
   margin-top: 3px;
+  transition: color 0.1s ease-in-out;
 }
 
 /*--------------------------------------------------------------
@@ -242,7 +243,7 @@ section {
 .hero {
   width: 100%;
   height: 100vh;
-  background: url(../img/hero-bg.jpg) top center no-repeat;
+  background: #191A19 top center no-repeat;
   background-size: cover;
 }
 
@@ -275,6 +276,9 @@ section {
   color: #60a887;
 }
 
+.py-white {
+  color: #fff;
+}
 
 .hero .btn-get-started {
   margin-top: 50px;
@@ -284,7 +288,6 @@ section {
   transition: 0.5s;
   color: #fff;
   background: var(--prim-color);
-  box-shadow: 0px 5px 30px var(--prim-color);
 }
 
 .hero .btn-get-back {
