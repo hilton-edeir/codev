@@ -191,12 +191,12 @@ section {
 }
 
 .header .logo svg {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   margin-right: 6px;
   fill: var(--bg-light);
   stroke: var(--bg-light);
-  stroke-width: 1;
+  stroke-width: 2;
 }
 
 .header .logo span {
@@ -608,6 +608,11 @@ section {
 /*--------------------------------------------------------------
 # Project Details
 --------------------------------------------------------------*/
+
+.hero.hero-details {
+  background: var(--bg-light) top center no-repeat;
+}
+
 .portfolio-details {
   padding-top: 40px;
 }
