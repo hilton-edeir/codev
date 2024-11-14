@@ -609,8 +609,9 @@ section {
 # Project Details
 --------------------------------------------------------------*/
 
-.hero.hero-details {
-  background: var(--bg-light) top center no-repeat;
+
+.hero.hero-details h2 {
+  color: var(--bg-light);
 }
 
 .portfolio-details {
