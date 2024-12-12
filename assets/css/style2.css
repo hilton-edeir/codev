@@ -6,9 +6,12 @@
     --font-family-title: "Lilita One", sans-serif;
     --font-family-text: "Inter", sans-serif;
     --color-primary: #687EFF;
+    --color-primary-dark: #5365cc;
+    --color-primary-light: #778bff;
     --color-dark: #232323;
     --color-white: #fff;
     --color-black: #000;
+    --color-gray: #bbbbbb;
     --border-radius: 5px;
 }
 
@@ -16,7 +19,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    line-height: 1.3em;
+    line-height: 1.6em;
 }
 
 /* ---------- General ---------- */
@@ -41,6 +44,10 @@ li {
     & .link {
         color: var(--color-black);
     }
+
+    & .link:hover {
+        color: var(--color-primary);
+    }
 }
 
 .theme-dark {
@@ -49,15 +56,22 @@ li {
 
     & .link {
         color: var(--color-white);
+        transition: color 0.3s ease;
+    }
+
+    & .link:hover {
+        color: var(--color-primary);
     }
 }
 
-.layout-header {
-    max-width: 1200em;
+.layout {
+    max-width: 75em;
+    margin: 0 auto;
 }
 
-.layout {
-    padding: 80px 100px;
+.divider {
+    height: 1px;
+    background-color: var(--color-white);
 }
 
 /* ---------- End General ---------- */
@@ -65,7 +79,18 @@ li {
 /* ---------- Button and Link ---------- */
 
 .button-primary {
-    outline: transparent;
+    font-family: var(--font-family-text);
+    border: 1px solid var(--color-primary);
+    border-radius: var(--border-radius);
+    padding: 10px;
+    color: var(--color-white);
+    background-color: var(--color-primary);
+    transition: all 0.3s ease;
+}
+
+.button-primary:hover {
+    background-color: var(--color-primary-dark);
+    cursor: pointer;
 }
 
 .button-primary-outline {
@@ -84,15 +109,20 @@ li {
     cursor: pointer;
 }
 
+
 /* ---------- End Button and Link ---------- */
 
 /* ---------- Header ---------- */
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid var(--color-primary);
+.header-section {
+    
+
+    & .layout {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 0 0;
+    }
 }
 
 .logo-group {
@@ -114,7 +144,7 @@ header {
     }
 }
 
-.list {
+.header-navbar-list {
     display: flex;
     align-items: center;
     gap: 20px;
@@ -127,12 +157,9 @@ header {
 .landing-section {
     display: grid;
     grid-template-columns: 1.5fr 1fr;
-    gap: 60px;
-
-    .greeting-icon {
-        width: 45px;
-        height: 45px;
-    }
+    gap: 45px;
+    margin: 30px 0 50px;
+    align-items: center;
 }
 
 .landing-section-title {
@@ -141,6 +168,11 @@ header {
     gap: 15px;
     font-size: 2.2em;
     font-weight: 800;
+
+    & .greeting-icon {
+        width: 45px;
+        height: 45px;
+    }
 }
 
 .landing-section-title span {
@@ -152,8 +184,61 @@ header {
     font-size: 1.1em;
 }
 
+.landing-section-buttons {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-top: 30px;
+
+}
+
 .landing-section-right {
-    border: 1px solid var(--color-white);
+    display: flex;
+    align-items: flex-start;
+    
 }
 
 /* ---------- End Main ---------- */
+
+/* ------------ Loader ------------ */
+
+.loader {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-dark);
+    transition: opacity 0.75s, visibility 0.75s;
+  }
+  
+  .loader::after {
+      content: "";
+      border: 16px solid var(--color-gray);
+      border-radius: 50%;
+      border-top: 16px solid var(--color-primary);
+      width: 60px;
+      height: 60px;
+      -webkit-animation: spin 2s linear infinite; /* Safari */
+      animation: spin 2s linear infinite;
+  }
+  
+  .loader--hidden {
+      opacity: 0;
+      visibility: hidden;
+  }
+  
+  /* Safari */
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
