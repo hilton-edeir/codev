@@ -11,7 +11,9 @@
     --color-dark: #232323;
     --color-white: #fff;
     --color-black: #000;
-    --color-gray: #bbbbbb;
+    --color-gray: #969696;
+    --color-gray-light: #ebebeb;
+    --color-gray-dark: #5e5e5e;
     --border-radius: 5px;
 }
 
@@ -120,6 +122,24 @@ li {
     cursor: pointer;
 }
 
+.button-secondary-outline {
+    font-family: var(--font-family-text);
+    border: 1px solid var(--color-gray);
+    border-radius: var(--border-radius);
+    padding: 10px;
+    color: var(--color-gray);
+    background-color: transparent;
+    transition: all 0.3s ease;
+}
+
+.button-secondary-outline:hover {
+    background-color: var(--color-gray);
+    color: var(--color-white);
+    cursor: pointer;
+}
+
+
+
 /* ---------- End Button and Link ---------- */
 
 /* ---------- Header ---------- */
@@ -164,16 +184,17 @@ li {
     display: grid;
     grid-template-columns: 1.2fr 1fr;
     gap: 45px;
-    padding: 50px 0 0;
+    padding: 50px 0 50px;
     align-items: center;
 }
 
 .landing-section-title {
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 8px;
     font-size: 2.2em;
     font-weight: 800;
+    color: var(--color-gray-light);
 
     & .greeting-icon {
         width: 45px;
@@ -186,7 +207,7 @@ li {
 }
 
 .landing-section-text {
-    margin-top: 30px;
+    margin-top: 20px;
     font-size: 1.1em;
 }
 
@@ -195,21 +216,19 @@ li {
     align-items: center;
     gap: 30px;
     margin-top: 30px;
-
 }
 
 .landing-section-right {
     display: flex;
     align-items: flex-start;
-    
 }
 
-/* ---------- End LAnding Section ---------- */
+/* ---------- End Landing Section ---------- */
 
 /* ---------- About Me Section ---------- */
 
 .about-me-section {
-    padding: 70px 0;
+    padding: 20px 0 120px;
 }
 
 .about-me-section-header {
@@ -250,7 +269,7 @@ li {
 /* ---------- My Projects Section ---------- */
 
 .my-projects-section {
-    padding-bottom: 50px;
+    padding: 20px 0 100px;
 }
 
 .my-projects-section-header {
@@ -268,7 +287,7 @@ li {
 }
 
 .project-card {
-    border: 1px solid var(--color-gray);
+    border: 1px solid var(--color-gray-dark);
     border-radius: var(--border-radius);
     padding: 24px;
     transition: all 0.4s ease;
@@ -276,7 +295,6 @@ li {
 
 .project-card:hover {
     cursor: pointer;
-    background-color: var(--color-primary-dark);
 }
 
 
