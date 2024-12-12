@@ -109,20 +109,15 @@ li {
     cursor: pointer;
 }
 
-
 /* ---------- End Button and Link ---------- */
 
 /* ---------- Header ---------- */
 
-.header-section {
-    
-
-    & .layout {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 15px 0 0;
-    }
+.header-section .layout {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0 0;
 }
 
 .logo-group {
@@ -158,7 +153,7 @@ li {
     display: grid;
     grid-template-columns: 1.5fr 1fr;
     gap: 45px;
-    margin: 30px 0 50px;
+    margin: 50px 0;
     align-items: center;
 }
 
@@ -199,6 +194,45 @@ li {
 }
 
 /* ---------- End Main ---------- */
+
+/* ---------- About Me ---------- */
+
+.about-me-section {
+    margin: 64px 0;
+}
+
+.about-me-section-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.about-me-section-body {
+    display: grid;
+    grid-template-columns: 1fr 2.5fr;
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.lottie-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.about-me-section-body-right {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.skill-title {
+    color: var(--color-primary);
+}
+
+/* ---------- End About Me ---------- */
+
 
 /* ------------ Loader ------------ */
 
