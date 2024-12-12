@@ -62,6 +62,17 @@ li {
     & .link:hover {
         color: var(--color-primary);
     }
+
+    & .link-text {
+        color: var(--color-primary-light);
+        transition: all 0.4s ease;
+    }
+
+    & .link-text:hover {
+        text-decoration: underline;
+        color: var(--color-primary);
+        cursor: pointer;
+    }
 }
 
 .layout {
@@ -147,13 +158,13 @@ li {
 
 /* ---------- End Header ---------- */
 
-/* ---------- Main ---------- */
+/* ---------- Landing Section ---------- */
 
 .landing-section {
     display: grid;
-    grid-template-columns: 1.5fr 1fr;
+    grid-template-columns: 1.2fr 1fr;
     gap: 45px;
-    margin: 50px 0;
+    padding: 50px 0 0;
     align-items: center;
 }
 
@@ -193,12 +204,12 @@ li {
     
 }
 
-/* ---------- End Main ---------- */
+/* ---------- End LAnding Section ---------- */
 
-/* ---------- About Me ---------- */
+/* ---------- About Me Section ---------- */
 
 .about-me-section {
-    margin: 64px 0;
+    padding: 70px 0;
 }
 
 .about-me-section-header {
@@ -206,6 +217,7 @@ li {
     flex-direction: column;
     align-items: center;
     margin-bottom: 20px;
+    color: var(--color-gray);
 }
 
 .about-me-section-body {
@@ -228,11 +240,47 @@ li {
 }
 
 .skill-title {
+    font-size: 1.1em;
     color: var(--color-primary);
+    margin-bottom: 5px;
 }
 
-/* ---------- End About Me ---------- */
+/* ---------- End About Me Section ---------- */
 
+/* ---------- My Projects Section ---------- */
+
+.my-projects-section {
+    padding-bottom: 50px;
+}
+
+.my-projects-section-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 60px;
+    color: var(--color-gray);
+}
+
+.my-projects-section-body {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+}
+
+.project-card {
+    border: 1px solid var(--color-gray);
+    border-radius: var(--border-radius);
+    padding: 24px;
+    transition: all 0.4s ease;
+}
+
+.project-card:hover {
+    cursor: pointer;
+    background-color: var(--color-primary-dark);
+}
+
+
+/* ---------- End My Projects Section ---------- */
 
 /* ------------ Loader ------------ */
 
