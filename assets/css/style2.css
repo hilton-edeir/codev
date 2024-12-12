@@ -1,28 +1,98 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Space+Grotesk:wght@300..700&display=swap');
 
 :root {
-    --font-family-title: "Poppins", serif;
-    --color-primary: #6830eb;
+    --font-family-title: "Lilita One", sans-serif;
+    --font-family-text: "Inter", sans-serif;
+    --color-primary: #687EFF;
+    --color-dark: #232323;
+    --color-white: #fff;
+    --color-black: #000;
+    --border-radius: 5px;
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    line-height: 1.3em;
 }
 
-.layout-main {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 3fr 1fr;
-    grid-template-areas: "           ";
+/* ---------- General ---------- */
+
+body {
+    font-family: var(--font-family-text);
+    font-size: 16px;
 }
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.theme-light {
+    background-color: var(--color-white);
+    color: var(--color-dark);
+
+    & .link {
+        color: var(--color-black);
+    }
+}
+
+.theme-dark {
+    background-color: var(--color-dark);
+    color: var(--color-white);
+
+    & .link {
+        color: var(--color-white);
+    }
+}
+
+.layout-header {
+    max-width: 1200em;
+}
+
+.layout {
+    padding: 80px 100px;
+}
+
+/* ---------- End General ---------- */
+
+/* ---------- Button and Link ---------- */
+
+.button-primary {
+    outline: transparent;
+}
+
+.button-primary-outline {
+    font-family: var(--font-family-text);
+    border: 1px solid var(--color-primary);
+    border-radius: var(--border-radius);
+    padding: 10px;
+    color: var(--color-primary);
+    background-color: transparent;
+    transition: all 0.3s ease;
+}
+
+.button-primary-outline:hover {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    cursor: pointer;
+}
+
+/* ---------- End Button and Link ---------- */
+
+/* ---------- Header ---------- */
 
 header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--color-primary);
 }
 
 .logo-group {
@@ -36,9 +106,54 @@ header {
     }
 
     & .website-name {
-        font-family: var(--font-family-title);
-        font-size: 1.4em;
-        font-weight: 600;
+        font-family: var(--font-family-text);
+        font-size: 2em;
+        font-weight: 900;
+        letter-spacing: 2px;
         color: var(--color-primary);
     }
 }
+
+.list {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* ---------- End Header ---------- */
+
+/* ---------- Main ---------- */
+
+.landing-section {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 60px;
+
+    .greeting-icon {
+        width: 45px;
+        height: 45px;
+    }
+}
+
+.landing-section-title {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 2.2em;
+    font-weight: 800;
+}
+
+.landing-section-title span {
+    color: var(--color-primary);
+}
+
+.landing-section-text {
+    margin-top: 30px;
+    font-size: 1.1em;
+}
+
+.landing-section-right {
+    border: 1px solid var(--color-white);
+}
+
+/* ---------- End Main ---------- */

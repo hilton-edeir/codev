@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
 
 :root {
    scroll-behavior: smooth;
@@ -11,12 +11,11 @@
   --sec-var-dark: #1b533c;
   --sec-var-light: #1b533c;
   --bg-light: #ffffff;
-  --bg-dark: #2b3137;
+  --bg-dark: #232323;
 }
 
 body{
   font-family: "Space Mono", monospace;;
-
 }
 
 body::-webkit-scrollbar {
@@ -426,6 +425,7 @@ section {
 }
 
 .features .feature-icons .content .icon-box p {
+  
   font-size: 15px;
   color: #848484;
 }
