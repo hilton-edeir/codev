@@ -40,6 +40,21 @@ li {
     list-style: none;
 }
 
+input {
+    font-family: var(--font-family-text);
+    font-size: 1em;
+    padding: 8px;
+    outline: transparent;
+    border: 1px solid var(--color-gray);
+    border-radius: var(--border-radius);
+    color: var(--color-gray-light);
+    background-color: transparent;
+}
+
+textarea {
+    
+}
+
 .theme-light {
     background-color: var(--color-white);
     color: var(--color-dark);
@@ -286,7 +301,7 @@ li {
 .my-projects-section-body {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 40px;
+    gap: 30px;
 }
 
 .project-card {
@@ -301,6 +316,7 @@ li {
 
 .project-card:hover {
     cursor: pointer;
+    background-color: var(--color-dark-medium);
 }
 
 .project-card-icon img {
@@ -338,6 +354,43 @@ li {
 
 /* ---------- End My Projects Section ---------- */
 
+/* ---------- Tools Section ---------- */
+
+.tools-section {
+    padding: 20px 0 100px;
+}
+
+.tools-section-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 60px;
+    color: var(--color-gray);
+}
+
+.tools-section-body {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 80px;
+    justify-content: center;
+
+    & img {
+        width: 80px;
+        height: 80px;
+        filter: grayscale(100%);
+        transition: all 0.7s ease;
+    }
+
+    & img:hover {
+        filter: grayscale(0);
+        cursor: pointer;
+    }
+}
+
+/* ---------- End Tools Section ---------- */
+
 /* ---------- Footer Section ---------- */
 
 .footer-section {
@@ -351,6 +404,7 @@ li {
 .contact-section {
     display: grid;
     grid-template-columns: 1fr 1.2fr;
+    gap: 50px;
 }
 
 .contact-section-left {
@@ -370,6 +424,30 @@ li {
     height: 50px;
     fill: var(--color-gray-light);
     stroke: var(--color-gray-light);
+}
+
+.contact-section-right {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px;
+    border-radius: var(--border-radius);
+    background-color: var(--color-dark-medium);
+}
+
+.contact-section-right-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact-section-right-middle {
+    height: 100%;
+    border: 1px solid;
+}
+
+.contact-section-right-bottom {
+    margin: auto auto 0;
 }
 
 .copyright {
